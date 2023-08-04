@@ -13,4 +13,3 @@ uvicorn \
     --host "$HOST" \
     --port "$PORT" \
     "$APP_MODULE"
-    
