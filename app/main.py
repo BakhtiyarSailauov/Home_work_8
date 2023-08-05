@@ -8,8 +8,8 @@ from starlette.responses import JSONResponse
 
 from .flowers_repository import FlowersRepository
 from .users_repository import UsersRepository
-from .models import User, Flower, UserRequest, FlowerRequest
-from .database import Base, engine, SessionLocal
+from models import User, Flower, UserRequest, FlowerRequest
+from database import Base, engine, SessionLocal
 
 Base.metadata.create_all(bind=engine)
 app = FastAPI()
