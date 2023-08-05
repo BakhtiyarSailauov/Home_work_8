@@ -94,8 +94,7 @@ def post_flowers(flower: FlowerRequest, db: Session = Depends(get_db)):
     except KeyError:
         raise HTTPException(status_code=400, detail="Flower already exists")
 
-    return {"message": "Flower registered successfully",
-            "flower_id": flower.id
+    return {"message": "Flower registered successfully"
             }
 
 

@@ -31,4 +31,5 @@ class FlowerRequest(BaseModel):
     name: str
     count: int
     cost: int
+    id: int | None
 
